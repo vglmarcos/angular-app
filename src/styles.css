@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body, app-root {
+    min-height: 100vh;
+}
+
+body {
+    background-color: #f4fafd;
+}
+
+app-root {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    'nav' 
+    'container' 
+}
+
+.container {
+    grid-area: container;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 35px;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: space-between;
+}
+
+router-outlet {
+    display: none;
+}
+
+app-nav {
+    grid-area: nav;
+}
+
+app-home {
+    grid-area: main;
+    padding: 0 80px;
+}
+
+app-about {
+    grid-area: main;
+    padding: 0 80px;
+}
+
+app-footer {
+    grid-area: footer;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}

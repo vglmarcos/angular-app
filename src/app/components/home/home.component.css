@@ -1,0 +1,19 @@
+.home-container {
+    height: 100%;
+    width: 100%;
+}
+
+.home-container section {
+    margin-bottom: 35px;
+}
+
+.home-container section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.home-container section p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
